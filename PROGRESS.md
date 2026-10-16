@@ -68,6 +68,15 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: skipped the HEAD question until prompted, first fix wasn't saved (markers still in file), why a commit is needed after resolving (good question, discussed), auto-merge condition needed a retry (first retry copied my sentence).
 - Hints used: 2 (which branch HEAD is on; why lines 1–4 merged automatically).
 
+### Guided project: the `webdev` repo ✅
+- Wrote `.gitignore` (node_modules/, .venv/, __pycache__/, .env, *.db, .answers.md, .DS_Store) and `README.md` (Markdown heading + list).
+- First commit `d90442b` "Add course setup and Module 0 files" (7 files). Created private repo github.com/sohailxsyed31-svg/webdev with `gh repo create --private --source=. --push`.
+- Struggled with: copied bullet dashes into `.gitignore`, Markdown needs a space after `#` and `-`, `git add.` (no space), `cat` without a filename, unsure where files were saved (verified with a listing).
+- Hints used: 1 (build the commit message from the staged file groups).
+
 ## Next
-- Module 0.1 guided project: turn `webdev` into GitHub repo `webdev`, add `.gitignore` (node_modules, .venv, __pycache__, .env, *.db, .answers.md) and a short README, first commit (CLAUDE.md, PROGRESS.md, README, Module 0 files), push.
+- Module 0.1 assignment (on my own):
+  1. Branch `about-me`: add an "About me" section to the README, at least 2 commits, push, open a PR with a description, merge on GitHub, update local main, delete the branch.
+  2. Create a merge conflict on purpose: two branches change the same README line, merge one, merge the other, resolve the conflict.
+- Then verification ("submit").
 - Note: `claude.md` has been renamed to `CLAUDE.md` (done). `webdev/` already has an empty git repo (accidental `git init`).
