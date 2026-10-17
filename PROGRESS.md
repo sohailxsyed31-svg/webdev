@@ -29,7 +29,7 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 
 ## Module 0: Setup ✅ COMPLETE (no git checkpoint; work becomes first commit in Module 0.1)
 
-## Module 0.1: Git and GitHub (in progress)
+## Module 0.1: Git and GitHub
 
 ### Lesson 1: What is Git? ✅
 - Learned: git records project history as commits (save points with messages), repo = tracked folder with history in `.git/`, branch = safe separate line of work, Git (tool) vs GitHub (website to store/share/back up repos).
@@ -74,9 +74,17 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: copied bullet dashes into `.gitignore`, Markdown needs a space after `#` and `-`, `git add.` (no space), `cat` without a filename, unsure where files were saved (verified with a listing).
 - Hints used: 1 (build the commit message from the staged file groups).
 
+### Assignment: about-me PR + merge conflict ✅ PASS
+- Checks: 13/13 (`python3 00.1-git/assignment/checks/check_git.py`).
+- Part 1: PR #1 "Add build goal to README.md" merged on GitHub (2 commits), branch deleted on GitHub and locally, local main pulled.
+- Part 2: branches `machine-learning` and `deep-learning` added different lines at the end of the README. First merged as fast-forward, second conflicted, resolved by keeping both lines (merge commit `59565ff`), pushed, both branches deleted.
+- Verification: PR title named a nonexistent file (`ABOUT_ME.md`) and the description described the goal, not the change. Both fixed on GitHub, then PASS. Answered 3 questions: who made each merge commit and where (GitHub vs my computer), why `git branch -f` lost nothing (branches are labels), fast-forward vs conflict.
+- Hints used: 2. (1) Move a commit made on main by mistake: `git switch -c about-me` + `git branch -f main origin/main`. (2) `git commit --amend` to fix the last commit's message and content.
+- Nudges (not counted): what to write in About me, use `git pull` instead of a local merge, fix the PR description.
+- Struggled with: committed on main despite warnings, `git add.` (3 times), spaces in branch names, `git branch <name>` instead of `git switch -c <name>`, `git push main`, `git merge about_me` instead of `git pull`, vague commit messages and PR description, needed guidance to read merge commit authors.
+
+## Module 0.1: Git and GitHub ✅ COMPLETE
+
 ## Next
-- Module 0.1 assignment (on my own):
-  1. Branch `about-me`: add an "About me" section to the README, at least 2 commits, push, open a PR with a description, merge on GitHub, update local main, delete the branch.
-  2. Create a merge conflict on purpose: two branches change the same README line, merge one, merge the other, resolve the conflict.
-- Then verification ("submit").
-- Note: `claude.md` has been renamed to `CLAUDE.md` (done). `webdev/` already has an empty git repo (accidental `git init`).
+- Module 1: HTML. Start: `git switch main`, `git pull`, `git switch -c module-1-html`.
+- Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
