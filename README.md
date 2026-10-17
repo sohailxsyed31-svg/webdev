@@ -7,3 +7,4 @@ this is my first repo
 # about me
 
 i am sohail and i am learning webdev
+i will build functional websites using ai agents
