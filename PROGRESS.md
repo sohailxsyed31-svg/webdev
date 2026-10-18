@@ -93,6 +93,12 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: copied `❯` into a command, missing `!`. Style nit: space before `=` in an attribute.
 - Hints used: 0.
 
+### Lesson 2: Headings, text, links, images ✅
+- Learned: `h1`–`h6` as hierarchy (one `h1`, don't skip levels, size comes from CSS), `p`, `strong`, `em`, `br`, `<a href>` absolute vs relative paths (relative to the HTML file's own folder), `<img src alt>`, empty elements (`img`, `meta`, `br`), `alt` as fallback + for screen readers.
+- Hands-on: `01-html/lessons/lesson2.html` with GitHub link, relative link to lesson1, image `webdev.jpeg`. Broke `src` on purpose and saw alt text + broken icon.
+- Struggled with: used a `.textClipping` instead of a real image, wrong relative paths (extra `lessons/`, leading `/`), words running together around `<strong>`/`<em>`, left Emmet's default `<title>Document</title>`, space before `=`, space before `!`.
+- Hints used: 0 (bugs found in code review).
+
 ## Next
-- Lesson 2 (Module 1): text, headings, links, images.
+- Lesson 3 (Module 1): lists, divs, semantic tags.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
