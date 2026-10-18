@@ -85,6 +85,14 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 
 ## Module 0.1: Git and GitHub ✅ COMPLETE
 
+## Module 1: HTML (in progress, branch `module-1-html`)
+
+### Lesson 1: Page structure ✅
+- Learned: tags, elements, attributes; page skeleton (`<!DOCTYPE html>`, `html lang`, `head`, `meta charset`, `meta viewport`, `title`, `body`); `<title>` (tab) vs `<h1>` (page); browser default styles; indentation is only for humans; browsers silently fix mistakes (a `<p>` in `<head>` still shows), so HTML bugs don't raise errors; Emmet `!` + Tab generates the skeleton.
+- Hands-on: `01-html/lessons/lesson1.html` typed by hand, opened with `open`.
+- Struggled with: copied `❯` into a command, missing `!`. Style nit: space before `=` in an attribute.
+- Hints used: 0.
+
 ## Next
-- Module 1: HTML. Start: `git switch main`, `git pull`, `git switch -c module-1-html`.
+- Lesson 2 (Module 1): text, headings, links, images.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
