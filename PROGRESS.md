@@ -99,6 +99,12 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: used a `.textClipping` instead of a real image, wrong relative paths (extra `lessons/`, leading `/`), words running together around `<strong>`/`<em>`, left Emmet's default `<title>Document</title>`, space before `=`, space before `!`.
 - Hints used: 0 (bugs found in code review).
 
+### Lesson 3: Lists, divs, semantic tags ✅
+- Learned: `ul`/`ol`/`li` (`ol` when order matters), block vs inline (`p` stacks, `a` flows), `div` = box with no meaning, semantic `header`/`main`/`section`/`footer` add meaning not style (header → div swap changed nothing), HTML comments `<!-- -->`, Format Document (Shift+Option+F), indentation reveals missing closing tags.
+- Hands-on: `01-html/lessons/lesson3.html` (skills page with two sections, ul + ol, div, footer).
+- Struggled with: first experiment swapped `<h1>` instead of `<header>` (heading shrank), forgot `<header>` and then to swap it back, lost a `</section>` (caught by formatting), footer text not in `<p>`, typo, skipped Q3 until prompted.
+- Hints used: 1 (count opening vs closing `<section>` tags).
+
 ## Next
-- Lesson 3 (Module 1): lists, divs, semantic tags.
+- Lesson 4 (Module 1): forms and inputs (with labels). Then the guided project (profile page).
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
