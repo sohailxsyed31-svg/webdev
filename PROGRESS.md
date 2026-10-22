@@ -117,6 +117,14 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: wrapped whole paragraphs in strong/em, stray comma (`,id`) silently broke a label (found by clicking the label), forgot the textarea label, "Lesson $" typo, formatting.
 - Hints used: 0.
 
+### Assignment: expense tracker static page ✅ PASS
+- First submit. Checks 19/19 (`python3 01-html/assignment/checks/check_html.py`).
+- Page `01-html/assignment/index.html`: header/h1, form in main (text name, number amount, select with 3 categories + required placeholder, "Add Expense" button, all labeled), list of 3 expenses (name — ₹amount — category), Total ₹270 (correct).
+- Discussed: dropdown categories (Groceries/Food/Clothes) didn't match expense categories (Travel/Education), so categories must be one fixed list (matters for the Module 3 filter, Module 4 types, Module 6 validation). `min="0"` allows ₹0; use `min="1"` or `min="0.01"` + `step="0.01"`. Add only reloads without JavaScript.
+- Struggled with: vague first answers on the category mismatch and `min`, `git sta` / `git com` (cut-off commands), unclosed `"` in a commit message.
+- Hints used: 0.
+
 ## Next
-- Module 1 assignment: expense tracker static page (heading, form with name/amount/category dropdown/Add button, 3 hardcoded expenses, total line, semantic tags, every input labeled).
+- Module 1 git checkpoint: commit + push, open PR `module-1-html` → main, merge on GitHub, `git switch main`, `git pull`, delete branch, verify.
+- Optional before Module 2: align dropdown and expense categories, fix `min`.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
