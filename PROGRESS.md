@@ -105,6 +105,12 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: first experiment swapped `<h1>` instead of `<header>` (heading shrank), forgot `<header>` and then to swap it back, lost a `</section>` (caught by formatting), footer text not in `<p>`, typo, skipped Q3 until prompted.
 - Hints used: 1 (count opening vs closing `<section>` tags).
 
+### Lesson 4: Forms and inputs ✅
+- Learned: `<form>`, input types (`text`, `email`, `number`), `placeholder`, `required`, `min`, `<select>`/`<option>` (`value` vs visible text, blank first option + `required`), `<button type="submit">`, `<label for>` ↔ `id` (click focuses input, screen readers announce it), `id` (unique, linking) vs `name` (key for submitted data), ids can't contain spaces, submit sends `name=value` pairs in the URL (query string) but with no server nothing is saved.
+- Hands-on: `01-html/lessons/lesson4.html` (study group form). Tested required, email validation, `min`, URL query string.
+- Struggled with: id/name with spaces (`year of study`), forgot `min="1"`, options didn't match the label (calendar years), space before `=` (3rd time), stray `no` typed into the page, thought label clicks did nothing (cursor focus was easy to miss).
+- Hints used: 0.
+
 ## Next
-- Lesson 4 (Module 1): forms and inputs (with labels). Then the guided project (profile page).
+- Module 1 guided project: personal profile page. Then the assignment (expense tracker static page).
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
