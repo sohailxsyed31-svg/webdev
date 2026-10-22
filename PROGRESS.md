@@ -85,6 +85,46 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 
 ## Module 0.1: Git and GitHub ✅ COMPLETE
 
+## Module 1: HTML (in progress, branch `module-1-html`)
+
+### Lesson 1: Page structure ✅
+- Learned: tags, elements, attributes; page skeleton (`<!DOCTYPE html>`, `html lang`, `head`, `meta charset`, `meta viewport`, `title`, `body`); `<title>` (tab) vs `<h1>` (page); browser default styles; indentation is only for humans; browsers silently fix mistakes (a `<p>` in `<head>` still shows), so HTML bugs don't raise errors; Emmet `!` + Tab generates the skeleton.
+- Hands-on: `01-html/lessons/lesson1.html` typed by hand, opened with `open`.
+- Struggled with: copied `❯` into a command, missing `!`. Style nit: space before `=` in an attribute.
+- Hints used: 0.
+
+### Lesson 2: Headings, text, links, images ✅
+- Learned: `h1`–`h6` as hierarchy (one `h1`, don't skip levels, size comes from CSS), `p`, `strong`, `em`, `br`, `<a href>` absolute vs relative paths (relative to the HTML file's own folder), `<img src alt>`, empty elements (`img`, `meta`, `br`), `alt` as fallback + for screen readers.
+- Hands-on: `01-html/lessons/lesson2.html` with GitHub link, relative link to lesson1, image `webdev.jpeg`. Broke `src` on purpose and saw alt text + broken icon.
+- Struggled with: used a `.textClipping` instead of a real image, wrong relative paths (extra `lessons/`, leading `/`), words running together around `<strong>`/`<em>`, left Emmet's default `<title>Document</title>`, space before `=`, space before `!`.
+- Hints used: 0 (bugs found in code review).
+
+### Lesson 3: Lists, divs, semantic tags ✅
+- Learned: `ul`/`ol`/`li` (`ol` when order matters), block vs inline (`p` stacks, `a` flows), `div` = box with no meaning, semantic `header`/`main`/`section`/`footer` add meaning not style (header → div swap changed nothing), HTML comments `<!-- -->`, Format Document (Shift+Option+F), indentation reveals missing closing tags.
+- Hands-on: `01-html/lessons/lesson3.html` (skills page with two sections, ul + ol, div, footer).
+- Struggled with: first experiment swapped `<h1>` instead of `<header>` (heading shrank), forgot `<header>` and then to swap it back, lost a `</section>` (caught by formatting), footer text not in `<p>`, typo, skipped Q3 until prompted.
+- Hints used: 1 (count opening vs closing `<section>` tags).
+
+### Lesson 4: Forms and inputs ✅
+- Learned: `<form>`, input types (`text`, `email`, `number`), `placeholder`, `required`, `min`, `<select>`/`<option>` (`value` vs visible text, blank first option + `required`), `<button type="submit">`, `<label for>` ↔ `id` (click focuses input, screen readers announce it), `id` (unique, linking) vs `name` (key for submitted data), ids can't contain spaces, submit sends `name=value` pairs in the URL (query string) but with no server nothing is saved.
+- Hands-on: `01-html/lessons/lesson4.html` (study group form). Tested required, email validation, `min`, URL query string.
+- Struggled with: id/name with spaces (`year of study`), forgot `min="1"`, options didn't match the label (calendar years), space before `=` (3rd time), stray `no` typed into the page, thought label clicks did nothing (cursor focus was easy to miss).
+- Hints used: 0.
+
+### Guided project: personal profile page ✅
+- `01-html/guided-project/index.html`: header (h1, tagline, photo via `../lessons/myimg.jpg`), main with About / Skills (ul) / Goals (ol) / Find me (absolute + `../` relative links) / Contact (form: name, email, textarea, all labeled), footer.
+- Learned: `../` = parent folder, `index.html` as a site's default page, `<textarea>` (has a closing tag), list of links pattern, `strong`/`em` for words not whole paragraphs.
+- Struggled with: wrapped whole paragraphs in strong/em, stray comma (`,id`) silently broke a label (found by clicking the label), forgot the textarea label, "Lesson $" typo, formatting.
+- Hints used: 0.
+
+### Assignment: expense tracker static page ✅ PASS
+- First submit. Checks 19/19 (`python3 01-html/assignment/checks/check_html.py`).
+- Page `01-html/assignment/index.html`: header/h1, form in main (text name, number amount, select with 3 categories + required placeholder, "Add Expense" button, all labeled), list of 3 expenses (name — ₹amount — category), Total ₹270 (correct).
+- Discussed: dropdown categories (Groceries/Food/Clothes) didn't match expense categories (Travel/Education), so categories must be one fixed list (matters for the Module 3 filter, Module 4 types, Module 6 validation). `min="0"` allows ₹0; use `min="1"` or `min="0.01"` + `step="0.01"`. Add only reloads without JavaScript.
+- Struggled with: vague first answers on the category mismatch and `min`, `git sta` / `git com` (cut-off commands), unclosed `"` in a commit message.
+- Hints used: 0.
+
 ## Next
-- Module 1: HTML. Start: `git switch main`, `git pull`, `git switch -c module-1-html`.
+- Module 1 git checkpoint: commit + push, open PR `module-1-html` → main, merge on GitHub, `git switch main`, `git pull`, delete branch, verify.
+- Optional before Module 2: align dropdown and expense categories, fix `min`.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
