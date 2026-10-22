@@ -111,6 +111,12 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: id/name with spaces (`year of study`), forgot `min="1"`, options didn't match the label (calendar years), space before `=` (3rd time), stray `no` typed into the page, thought label clicks did nothing (cursor focus was easy to miss).
 - Hints used: 0.
 
+### Guided project: personal profile page ✅
+- `01-html/guided-project/index.html`: header (h1, tagline, photo via `../lessons/myimg.jpg`), main with About / Skills (ul) / Goals (ol) / Find me (absolute + `../` relative links) / Contact (form: name, email, textarea, all labeled), footer.
+- Learned: `../` = parent folder, `index.html` as a site's default page, `<textarea>` (has a closing tag), list of links pattern, `strong`/`em` for words not whole paragraphs.
+- Struggled with: wrapped whole paragraphs in strong/em, stray comma (`,id`) silently broke a label (found by clicking the label), forgot the textarea label, "Lesson $" typo, formatting.
+- Hints used: 0.
+
 ## Next
-- Module 1 guided project: personal profile page. Then the assignment (expense tracker static page).
+- Module 1 assignment: expense tracker static page (heading, form with name/amount/category dropdown/Add button, 3 hardcoded expenses, total line, semantic tags, every input labeled).
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
