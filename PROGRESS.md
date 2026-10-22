@@ -85,7 +85,7 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 
 ## Module 0.1: Git and GitHub ✅ COMPLETE
 
-## Module 1: HTML (in progress, branch `module-1-html`)
+## Module 1: HTML (branch `module-1-html`, merged in PR #2)
 
 ### Lesson 1: Page structure ✅
 - Learned: tags, elements, attributes; page skeleton (`<!DOCTYPE html>`, `html lang`, `head`, `meta charset`, `meta viewport`, `title`, `body`); `<title>` (tab) vs `<h1>` (page); browser default styles; indentation is only for humans; browsers silently fix mistakes (a `<p>` in `<head>` still shows), so HTML bugs don't raise errors; Emmet `!` + Tab generates the skeleton.
@@ -124,7 +124,14 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: vague first answers on the category mismatch and `min`, `git sta` / `git com` (cut-off commands), unclosed `"` in a commit message.
 - Hints used: 0.
 
+### Git checkpoint ✅
+- PR #2 "Module 1 html" merged on GitHub (merge commit `729e544`), branch deleted on GitHub and locally, local main pulled and equal to GitHub, working tree clean, no forbidden files committed.
+- Git question: GitHub created the merge commit; local main fast-forwarded because it had no new commits of its own.
+- Struggled with: said "I think I pushed everything" without checking (`PROGRESS.md` was uncommitted).
+
+## Module 1: HTML ✅ COMPLETE
+
 ## Next
-- Module 1 git checkpoint: commit + push, open PR `module-1-html` → main, merge on GitHub, `git switch main`, `git pull`, delete branch, verify.
-- Optional before Module 2: align dropdown and expense categories, fix `min`.
+- Module 2: CSS. Start: `git switch main`, `git pull`, `git switch -c module-2-css`. This PROGRESS.md edit is uncommitted on main on purpose: it carries over to the new branch, commit it there.
+- Module 2 assignment starts from a copy of the Module 1 tracker. Consider first aligning dropdown and expense categories and fixing `min`.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
