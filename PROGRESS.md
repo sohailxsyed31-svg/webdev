@@ -131,7 +131,15 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 
 ## Module 1: HTML ✅ COMPLETE
 
+## Module 2: CSS (in progress, branch `module-2-css`)
+
+### Lesson 1: What CSS is, connecting a stylesheet ✅
+- Learned: rule syntax (selector { property: value; }), element selectors, inline vs `<style>` vs external `<link rel="stylesheet">` (external is best; inline is banned in the assignment), colors (named, hex, rgb), `font-family` with generic fallback (`sans-serif`), `font-size` in px, the cascade (later rule wins), invalid CSS is silently ignored, DevTools Inspect → Styles shows invalid properties crossed out with ⚠️.
+- Hands-on: `02-css/lessons/lesson1.html` + `lesson1.css`.
+- Struggled with: first answer to "nothing changes" gave only one check (save); left `coor` unfixed and the CSS unformatted after the experiment.
+- Hints used: 1 (the `<link>` href as the second thing to check).
+
 ## Next
-- Module 2: CSS. Start: `git switch main`, `git pull`, `git switch -c module-2-css`. This PROGRESS.md edit is uncommitted on main on purpose: it carries over to the new branch, commit it there.
+- Lesson 2 (Module 2): classes and selectors.
 - Module 2 assignment starts from a copy of the Module 1 tracker. Consider first aligning dropdown and expense categories and fixing `min`.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).
