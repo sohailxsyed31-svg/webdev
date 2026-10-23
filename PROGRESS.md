@@ -139,7 +139,13 @@ Setup done: Python 3.14.7, curl, git OK. Node v26.11.1 + npm 11.20.0 installed. 
 - Struggled with: first answer to "nothing changes" gave only one check (save); left `coor` unfixed and the CSS unformatted after the experiment.
 - Hints used: 1 (the `<link>` href as the second thing to check).
 
+### Lesson 2: Classes and selectors ✅
+- Learned: `class` attribute + `.class` selector, multiple classes (space-separated), kebab-case names (`expense-card`), id selector exists but avoid for styling, descendant selector (`.card p`, space = "inside"), grouping (`h1, h2`), `:hover` pseudo-class, specificity element < class < id < inline ("later wins" only between equally specific rules).
+- Hands-on: `02-css/lessons/lesson2.html` + `lesson2.css`. Predicted correctly that `.note` beats a later `p` rule.
+- Struggled with: unclosed `<link>` tag (missing `>`), `.btn :hover` with a space (hover never fired), unnecessary `<br>` between paragraphs, formatting.
+- Hints used: 1 (compare `.btn :hover` with `.card p`).
+
 ## Next
-- Lesson 2 (Module 2): classes and selectors.
+- Lesson 3 (Module 2): box model.
 - Module 2 assignment starts from a copy of the Module 1 tracker. Consider first aligning dropdown and expense categories and fixing `min`.
 - Habits to keep: create the branch before editing, read `On branch …` in `git status` before every commit, descriptive commit messages (verb + what changed).

@@ -1,0 +1,32 @@
+body{
+    background-color: blueviolet;
+}
+
+.note {
+    background-color: lightblue;
+    color: yellow;
+}
+
+.important {
+    font-weight: bold;
+
+}
+
+.card p {
+    color: pink;
+
+}
+
+.btn {
+    background-color: violet;
+    color: bisque;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+p{
+    color: blue;
+}
